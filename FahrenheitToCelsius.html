@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Convert from Fahrenheit to Celsius</title>
+
+<script type="text/javascript">
+
+var f_temp;
+var c_temp;
+var intro;//f_temp is Fahrenheit temperature, c_temp is Celsius temperature
+	
+/*starts a loop*/
+
+while(true){//get the fahrenheit temperature from the user
+
+f_temp = prompt("Enter Fahrenheit temperature: ", "Enter 999 to end this program");
+
+if(f_temp==999){//exit the loop if the user has entered 999
+break;
+}
+
+//check whether or not the entered value is in the valid range
+
+if (f_temp < -100 || f_temp > 212) { //if it is not show the alert,the prevent additional dialogs checkbox is shown by default
+alert("You have entered "+f_temp +"\nThe acceptable range is from -100 to +212");
+}
+
+else {//if the entered value is within the acceptable range, calculate its celsius equivalent
+
+c_temp=(f_temp-32)*5/9;
+
+//display the entered fahrenheit and calculated celsius values, the prevent additional dialogs checkbox is shown by default
+
+alert("Fahrenheit Temperature is: "+f_temp+"\n" + "\nCelsius Temperature is: "+c_temp);
+
+}
+}
+
+</script>
+</head>
+<body>
+<main>
+<h1>Thanks for using my first JavaScript Program - [Author Harsh Patel] </h1>
+
+</main>
+</body>
+</html>
